@@ -7,7 +7,7 @@ const PrivateRoute = ({ component: Component, auth, ...rest }) => (
   <Route
     {...rest}
     render={props => {
-      if (!auth.isLoading) {
+      if (auth.isLoading) {
         return (
           <div className="d-flex justify-content-center">
             <div className="spinner-border" role="status">
