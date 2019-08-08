@@ -14,6 +14,9 @@ class Header extends Component {
     const { isAuthenticated, user } = this.props.auth;
     const authLinks = (
       <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
+        <span className="navbar-text mr-3">
+          <strong>{user ? `Welcome back, ${user.username}` : ''}</strong>
+        </span>
         <li className="nav-item">
           <button
             type="button"
