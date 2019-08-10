@@ -29,7 +29,8 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
-
+# These are essentially the disparate parts of the project that come together to
+# create the whole, every new 'App' but be added here as well!
 INSTALLED_APPS = [
     "django.contrib.admin",
     "django.contrib.auth",
